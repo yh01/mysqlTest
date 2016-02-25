@@ -9,9 +9,15 @@
 </head>
 <body>
 <s:form action="SelectAction">
+
 	<p>ユーザー検索</p>
+
 	<s:textfield name="idse" placeholder="IDを入力" />
 	<s:submit value="検索"/>
+
+	<table>
+	<tr>
+	</tr>
 		<s:iterator value="myId">
 		<p>ID:<s:property value="myId"/></p>
 		</s:iterator>
@@ -21,6 +27,7 @@
 		<s:iterator value="myAdd">
 		<p>ADDRESS:<s:property value="myAdd"/></p>
 		</s:iterator>
+	</table>
 </s:form>
 </body>
 </html>
